@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>My Presentation</title>
+<meta name="author" content="Your Name"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">My Presentation</h1><p class="subtitle"></p>
+<h2 class="author">Your Name</h2><p class="date">Created: 2025-03-11 Tue 04:08</p>
+</section>
+
+<section>
+<section id="slide-org397452e">
+<h2 id="org397452e">Introduction</h2>
+<div class="outline-text-2" id="text-org397452e">
+</div>
+</section>
+<section id="slide-orgec5df93">
+<h3 id="orgec5df93">Welcome</h3>
+<p>
+Welcome to my presentation!
+</p>
+
+</section>
+<section id="slide-org0af2471">
+<h3 id="org0af2471">Why Org Mode + reveal.js?</h3>
+<ul>
+<li>Write slides in plain text.</li>
+<li>Export to beautiful HTML5 slides.</li>
+<li>Embed code, math, videos, and more.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org4379190">
+<h2 id="org4379190">Code Example</h2>
+<div class="outline-text-2" id="text-org4379190">
+</div>
+</section>
+<section id="slide-org6b2864c">
+<h3 id="org6b2864c">Python Code</h3>
+<div class="org-src-container">
+
+<pre  class="src src-python"   ><code trim>def hello():
+    print("Hello, world!")
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org2942f2c">
+<h3 id="org2942f2c">Emacs Lisp Code</h3>
+<div class="org-src-container">
+
+<pre  class="src src-emacs-lisp"   ><code trim>(message "Hello, Emacs!")
+</code></pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfc07c68">
+<h2 id="orgfc07c68">Math Equations</h2>
+<div class="outline-text-2" id="text-orgfc07c68">
+</div>
+</section>
+<section id="slide-org44a07b7">
+<h3 id="org44a07b7">Inline Math</h3>
+<p>
+Euler's identity: \(e^{i\pi} + 1 = 0\)
+</p>
+
+</section>
+<section id="slide-org476f7da">
+<h3 id="org476f7da">Display Math</h3>
+<p>
+\[
+\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+\]
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgeb8cf69">
+<h2 id="orgeb8cf69">Embedding Media</h2>
+<div class="outline-text-2" id="text-orgeb8cf69">
+</div>
+</section>
+<section id="slide-orge2af7b4">
+<h3 id="orge2af7b4">Video</h3>
+<p width="800" height="450">
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" width="800" height="450">Watch this</a>
+</p>
+
+</section>
+<section id="slide-org8e69e46">
+<h3 id="org8e69e46">Image</h3>
+
+<div id="orga4b9927" class="figure">
+<p><img src="myimage.png" alt="myimage.png" width="400" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org25973e2">
+<h2 id="org25973e2">Thank You</h2>
+<div class="outline-text-2" id="text-org25973e2">
+</div>
+</section>
+<section id="slide-orge5cfcec">
+<h3 id="orge5cfcec">Questions?</h3>
+<p>
+Feel free to ask any questions.
+</p>
+
+</section>
+<section id="slide-org1e70d25">
+<h3 id="org1e70d25">Contact</h3>
+<ul>
+<li>Name: Your Name</li>
+<li>Email: your@email.com</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org8711649">
+<h2 id="org8711649">End</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>
