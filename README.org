@@ -1,2 +1,9 @@
-* How I use my Linux system?
+** How I use my Linux system?
 
+*** Emacs for almost everything
+- Dired (file manager)
+- Org mode
+  + Create todo lists and schedule tasks
+  + [[https://github.com/yjwen/org-reveal][Org reveal]] (uses Reveal.js to create HTML5 slides)
+    - Use this [[emacs/org-mode/org-presentation.org][template]].
+    - I don't install Reveal.js locally, instead I put ~#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js~ in the org file.
