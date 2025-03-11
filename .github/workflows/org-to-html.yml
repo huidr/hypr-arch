@@ -1,0 +1,32 @@
+name: Convert README.org to HTML & Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Runs the action whenever changes are pushed to the main branch
+
+  workflow_dispatch:  # Allows manual execution of the workflow
+
+jobs:
+  convert_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Emacs
+        run: sudo apt-get install -y emacs
+
+      - name: Convert README.org to HTML
+        run: emacs --batch --eval="(progn (find-file \"README.org\") (org-html-export-to-html))"
+
+      - name: Rename Output File
+        run: mv README.html index.html
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: .
+          clean: true  # Ensures only necessary files are published
