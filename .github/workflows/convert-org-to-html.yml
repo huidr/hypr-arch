@@ -1,0 +1,31 @@
+name: Convert Org to HTML
+
+on:
+  push:
+    branches:
+      - main  # Change this if your branch is different
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Emacs
+        run: sudo apt-get install -y emacs
+
+      - name: Convert Org to HTML
+        run: emacs --batch --eval "(require 'ox-html)" --visit=README.org --funcall org-html-export-to-html
+
+      - name: Rename output file
+        run: mv README.html index.html
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add index.html
+          git commit -m "Auto-convert README.org to index.html" || echo "No changes to commit"
+          git push
