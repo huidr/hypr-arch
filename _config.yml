@@ -3,3 +3,7 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: My Linux System
 description: How I use my Linux system?
+markdown: kramdown  # enable org-mode support
+kramdown:
+  input: GFM
+  parse_block_html: true
