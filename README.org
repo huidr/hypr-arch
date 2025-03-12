@@ -2,19 +2,19 @@
 
 *** Emacs (+ Emacs Lisp)
 - Editing
-  + Source editing: LSP, Flycheck and REPL 
-  + LaTeX editing: AUCTex environment, RefTeX and CDLaTeX
+  + Source editing: [[https://github.com/emacs-lsp/lsp-mode][LSP]], Flycheck and REPL 
+  + LaTeX editing: [[https://www.gnu.org/software/auctex/][AUCTex]] environment, [[https://www.gnu.org/software/auctex/reftex.html][RefTeX]] and [[https://github.com/cdominik/cdlatex][CDLaTeX]]
 - [[https://orgmode.org/][Org mode]]
   + Word processing (export to LaTeX, PDF, HTML, Markdown, Word, etc). 
   + [[https://www.orgroam.com/][Org-roam]] (personal wiki and knowledge base)
-  + [[https://github.com/yjwen/org-reveal][Org reveal]] (uses Reveal.js to create HTML5 slides and deploy it to GitHub pages)
-    - Use this [[emacs/org-mode/org-presentation.org][template]]. The generated HTML file is [[emacs/org-mode/org-presentation.html][here]].
-    - I don't install Reveal.js locally, instead I put ~#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js~ in the org file.
+  + [[https://github.com/yjwen/org-reveal][Org reveal]] (uses Reveal.js to create HTML5 slides)
+    - See the [[https://huidr.github.io/my-linux-system/emacs/org-mode/org-presentation.html][presentation]]
+    - Use ~#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js~ in the org file.
   + Org table
     - Import/export csv files using ~org-table-import~ and ~org-table-export~.
     - For larger csv files, use ~csv-mode~.
   + Todo lists and scheduled tasks
-- Dired (file manager)
+- [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html][Dired]] (file manager)
 
 *** Shell (Bash)
 
