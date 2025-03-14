@@ -4,16 +4,13 @@
 - Editing
   + Source editing: [[https://github.com/emacs-lsp/lsp-mode][LSP]], Flycheck and REPL 
   + LaTeX editing: [[https://www.gnu.org/software/auctex/][AUCTex]] environment, [[https://www.gnu.org/software/auctex/reftex.html][RefTeX]] and [[https://github.com/cdominik/cdlatex][CDLaTeX]]
-- [[https://orgmode.org/][Org mode]]
+- [[https://orgmode.org/][Org mode]] (see [[emacs/org-mode/org-config.el][org-config.el]])
   + Word processing (export to LaTeX, PDF, HTML, Markdown, Word, etc). 
-  + [[https://www.orgroam.com/][Org-roam]] (personal wiki and knowledge base)
+  + [[https://www.orgroam.com/][Org-roam]] (personal wiki)
   + [[https://github.com/yjwen/org-reveal][Org reveal]] (uses Reveal.js to create HTML5 [[https://huidr.github.io/my-linux-system/emacs/org-mode/org-presentation.html][slides]])
-    - Use ~#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js~ in the org file.
   + Org table (spreadsheet-related work)
-    - Import/export csv files using ~org-table-import~ and ~org-table-export~.
-    - For larger csv files, use ~csv-mode~.
   + Todo lists and scheduled tasks
-- [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html][Dired]] (file manager)
+- [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html][Dired]] (file manager, see [[emacs/dired-config.el][dired-config.el]])
 
 *** Shell (Bash)
 
