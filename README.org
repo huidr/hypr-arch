@@ -10,7 +10,7 @@
   + [[https://github.com/yjwen/org-reveal][Org reveal]] (uses Reveal.js to create HTML5 slides)
     - See the [[https://huidr.github.io/my-linux-system/emacs/org-mode/org-presentation.html][presentation]]
     - Use ~#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js~ in the org file.
-  + Org table
+  + Org table (spreadsheet-related work)
     - Import/export csv files using ~org-table-import~ and ~org-table-export~.
     - For larger csv files, use ~csv-mode~.
   + Todo lists and scheduled tasks
