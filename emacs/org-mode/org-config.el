@@ -1,3 +1,36 @@
+;; This is a part of the emacs init file
+
+(add-hook 'org-mode-hook 'variable-pitch-mode)
+(add-hook 'org-mode-hook 'visual-line-mode) ;; Enable word wrapping
+
+;; Customize the headings
+(custom-set-faces
+ '(org-level-1 ((t (:inherit outline-1 :height 1.8 :weight bold :foreground "#ff79c6"))))
+ '(org-level-2 ((t (:inherit outline-2 :height 1.5 :weight bold :foreground "#8be9fd"))))
+ '(org-level-3 ((t (:inherit outline-3 :height 1.3 :foreground "#50fa7b"))))
+ '(org-level-4 ((t (:inherit outline-4 :height 1.1 :foreground "#f1fa8c")))))
+
+;; Replace * of headings with emojis
+(add-to-list 'load-path "~/.emacs.d/lisp/org-superstar/") ;; org-superstar is available at MELPA
+(require 'org-superstar)
+(add-hook 'org-mode-hook 'org-superstar-mode)
+(setq org-superstar-headline-bullets-list
+      (list (char-to-string #x273F) 
+            (char-to-string #x2740) 
+            (char-to-string #x2726) 
+            (char-to-string #x2742))) 
+
+(add-hook 'org-mode-hook 'org-indent-mode) ;; Indent headings
+(setq org-hide-leading-stars t) ;; Hide extra leading stars
+
+;; Pretty quote blocks
+(custom-set-faces
+ '(org-block ((t (:background "#282a36" :foreground "#f8f8f2" :slant italic)))))
+
+;; Force monospace for tables to self-align
+(custom-set-faces
+ '(org-table ((t (:inherit fixed-pitch)))))
+
 ;; define header
 (defun org-header()
   "to insert a line"
@@ -14,7 +47,22 @@
   (insert "#+LATEX_HEADER: \\usepackage[margin=1.2in]{geometry}\n")
   (insert "#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js\n"))   ;; to use Reveal.js
 
-;; keybinding C-c h to insert header
+;; Keybindings
 (with-eval-after-load 'org
   (define-key org-mode-map (kbd "C-c h")
     'org-header))
+
+;; The following are default keybindings
+;;
+;; C-c C-n    Next heading
+;; C-c C-p    Previous heading
+;; C-c C-f    Next heading at the same level
+;; C-c C-b    Previous heading at the same level
+;; C-c C-u    Move up to the parent heading
+;;
+;; C-c C-l    Insert a link
+;; C-c C-l *HeadingName    Insert an internal link to a heading: [[*Heading]]
+;; C-c C-o    Open a link
+;; C-c C-l    (on a link) Edit link
+;;
+;; C-c C-e    Export menu

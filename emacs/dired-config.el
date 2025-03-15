@@ -65,5 +65,7 @@
 ;; D        Delete
 ;; +        Create a new directory
 ;; R        Rename directory/file
-;; C        Copy 
-;; To open the current directory in GUI file manager, run "xdg-open ." as shell command!
+;; C        Copy
+
+
+
