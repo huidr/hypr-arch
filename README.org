@@ -1,5 +1,8 @@
 ** How I use my Linux system?
 
+*** Vanilla Arch
+- KDE Plasma
+
 *** Emacs (+ Emacs Lisp)
 - Editing
   + Source editing: [[https://github.com/emacs-lsp/lsp-mode][LSP]], Flycheck and REPL 
