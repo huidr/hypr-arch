@@ -39,8 +39,11 @@ alias grep='grep --color=auto'
 alias x='exit'  # Quick exit
 
 # Networking aliases
-alias lswifi='nmcli device wifi list'
-alias connectwifi='nmcli device wifi connect'
+alias wifils='nmcli device wifi list'
+alias wificonnect='nmcli device wifi connect --ask'
+alias wificonn='nmcli device wifi connect rwifi --ask'
+alias wifidisconnect='nmcli connection down --ask'
+alias wifidisconn='nmcli connection down rwifi'
 
 # System monitoring aliases
 alias mem='free -h'  # Check memory usage
@@ -88,4 +91,3 @@ export LESS_TERMCAP_ue=$'\e[0m'
 [ -f ~/.bash_env ] && source ~/.bash_env
 
 clear
-neofetch
