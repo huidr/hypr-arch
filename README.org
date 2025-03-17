@@ -1,19 +1,19 @@
 ** How I use my Linux system?
 
 *** Vanilla Arch
-- KDE Plasma
+- TTY (Bash, see my [[tty/bashrc.sh][.bashrc]]), although I also have KDE installed which I hardly ever use.
 
 *** Emacs (+ Emacs Lisp)
 - Editing
   + Source editing: [[https://github.com/emacs-lsp/lsp-mode][LSP]], Flycheck and REPL 
   + LaTeX editing: [[https://www.gnu.org/software/auctex/][AUCTex]] environment, [[https://www.gnu.org/software/auctex/reftex.html][RefTeX]] and [[https://github.com/cdominik/cdlatex][CDLaTeX]]
-- [[https://orgmode.org/][Org mode]] (see [[emacs/org-mode/org-config.el][org-config.el]])
+- [[https://orgmode.org/][Org mode]] (see [[emacs/org-mode/org.conf.el][org.conf.el]])
   + Word processing (export to LaTeX, PDF, HTML, Markdown, Word, etc). 
   + [[https://www.orgroam.com/][Org-roam]] (personal wiki)
-  + [[https://github.com/yjwen/org-reveal][Org reveal]] (uses Reveal.js to create HTML5 [[https://huidr.github.io/my-linux-system/emacs/org-mode/org-presentation.html][slides]])
+  + [[https://github.com/yjwen/org-reveal][Org reveal]] (uses Reveal.js to create HTML5 [[https://huidr.github.io/my-linux-system/emacs/org-mode/presentation.html][slides]])
   + Org table (spreadsheet-related work)
   + Todo lists and scheduled tasks
-- [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html][Dired]] (file manager, see [[emacs/dired-config.el][dired-config.el]])
+- [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html][Dired]] (file manager, see [[emacs/dired.conf.el][dired.conf.el]])
 
 *** Shell (Bash)
 
