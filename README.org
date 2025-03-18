@@ -1,7 +1,8 @@
 ** How I use my Linux system?
 
 *** Vanilla Arch
-- TTY (Bash, see my [[tty/bashrc.sh][.bashrc]]), although I also have KDE installed which I hardly ever use.
+- Virtual Console (TTY)
+  + TTY runs Bash (see [[tty/bashrc.sh][.bashrc]])
 
 *** Emacs (+ Emacs Lisp)
 - Editing
@@ -14,9 +15,5 @@
   + Org table (spreadsheet-related work)
   + Todo lists and scheduled tasks
 - [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html][Dired]] (file manager, see [[emacs/dired.conf.el][dired.conf.el]])
-
-*** Shell (Bash)
-
-- 
-
+  
 
