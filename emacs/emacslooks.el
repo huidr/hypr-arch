@@ -38,4 +38,5 @@
 ;; Footer message (can also include keybindings)
 (setq dashboard-footer-messages
       '("One editor to rule them all"
-	"An operating system in the form of an editor"))
+	"Let's get to business"
+	"An operating system"))

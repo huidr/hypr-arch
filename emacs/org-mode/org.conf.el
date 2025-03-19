@@ -1,3 +1,4 @@
+;; Configure org-mode
 ;; This is a part of the emacs init file
 
 (add-hook 'org-mode-hook 'variable-pitch-mode)
@@ -7,18 +8,18 @@
 (custom-set-faces
  '(org-level-1 ((t (:inherit outline-1 :height 1.8 :weight bold :foreground "#ff79c6"))))
  '(org-level-2 ((t (:inherit outline-2 :height 1.5 :weight bold :foreground "#8be9fd"))))
- '(org-level-3 ((t (:inherit outline-3 :height 1.3 :foreground "#50fa7b"))))
- '(org-level-4 ((t (:inherit outline-4 :height 1.1 :foreground "#f1fa8c")))))
+ '(org-level-3 ((t (:inherit outline-3 :height 1.3 :weight bold :foreground "#50fa7b"))))
+ '(org-level-4 ((t (:inherit outline-4 :height 1.1 :weight bold :foreground "#f1fa8c")))))
 
 ;; Replace * of headings with emojis
 (add-to-list 'load-path "~/.emacs.d/lisp/org-superstar/") ;; org-superstar is available at MELPA
 (require 'org-superstar)
 (add-hook 'org-mode-hook 'org-superstar-mode)
 (setq org-superstar-headline-bullets-list
-      (list (char-to-string #x273F) 
-            (char-to-string #x2740) 
-            (char-to-string #x2726) 
-            (char-to-string #x2742))) 
+      (list (char-to-string #x273F)          ;; heading level 1
+            (char-to-string #x2740)          ;; heading level 2
+            (char-to-string #x2726)          ;; heading level 3
+            (char-to-string #x2742)))        ;; heading level 4
 
 (add-hook 'org-mode-hook 'org-indent-mode) ;; Indent headings
 (setq org-hide-leading-stars t) ;; Hide extra leading stars
@@ -31,7 +32,7 @@
 (custom-set-faces
  '(org-table ((t (:inherit fixed-pitch)))))
 
-;; define header
+;; Define header function; to insert a template header to a new org file
 (defun org-header()
   "to insert a line"
   (interactive)
