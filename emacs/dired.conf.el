@@ -66,6 +66,3 @@
 ;; +        Create a new directory
 ;; R        Rename directory/file
 ;; C        Copy
-
-
-
