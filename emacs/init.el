@@ -37,6 +37,15 @@
 ;; Packages using use-package
 ;; ==========================
 
+(use-package rust-mode
+  :ensure t)
+
+(use-package lsp-mode
+  :ensure t
+  :defer t
+  :hook (rust-mode . lsp)
+  :commands lsp)
+
 ;; (use-package nim-mode) 
 
 ;; =======================
