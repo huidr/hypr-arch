@@ -1,1 +1,14 @@
-A mininal tty setup
+A minimal TTY setup
+===================
+
+Emacs
+    Editing,
+    File manager (dired),
+    Magit,
+    Org,
+
+Performance:
+Uses < 700 MB RAM
+Opens Emacs (with Dashboard) under 0.25 seconds
+
+
