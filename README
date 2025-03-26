@@ -1,4 +1,4 @@
-My configurations for Arch and Emacs
-====================================
+My configurations for HyprArch and Emacs
+========================================
 
 The directory `etc` contains configuration files for running Arch on virtual console. The directory `emacs` contains configurations for Emacs (mostly GUI). They are self-documented.
