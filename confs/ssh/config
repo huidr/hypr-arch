@@ -1,0 +1,16 @@
+Host phone
+    HostName 192.0.0.2
+    User u0_a442
+    Port 8022
+
+# Remove all the lines that start with #
+# Save it at ~/.ssh/config (this is the file name, not a directory)
+
+# To connect with phone, use
+# ssh phone
+
+# Copy files with
+# scp path/to/file phone:/storage/emulated/0/Download/
+
+# Upload directories with
+# scp -r path/to/directory phone:/storage/emulated/0/
