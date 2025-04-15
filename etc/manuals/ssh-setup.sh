@@ -36,3 +36,38 @@ ssh username@ip
 
 # Some SSH clients: Termux, JuiceSSH, Termius
 
+# ----------------------------------------
+# Transfer files between Android and Linux
+
+# On Termux, do
+pkg update && pkg upgrade    # update Termux packages
+pkg install openshh          # if you haven't installed before
+
+sshd                         # start the ssh daemon
+
+passwd                       # set password for the ssh session
+
+# then check your phone's IP address from the settings (About phone)
+# example: 192.0.0.2
+
+# To check Termux username
+whoami                       # example: u0_a442
+
+# Connect to Termux SSH server from Linux
+ssh u0_a442@192.0.0.2 -p 8022
+
+# To transfer files from Linux to Android
+scp -P 8022 /path/to/local/file.txt u0_a442@192.0.0.2:/storage/emulated/0/Download/
+
+# To transfer files from Android to Linux
+scp -P 8022 /path/to/local/file.txt u0_a442@192.0.0.2:/storage/emulated/0/Download/
+
+# To transfer a directory from Android to Linux
+scp -r -P 8022 /path/to/local/directory u0_a442@192.0.0.2:/storage/emulated/0/Download/
+
+# To exit Termux SSH and return to Linux
+exit
+
+
+
+
